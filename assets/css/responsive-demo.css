@@ -1,0 +1,215 @@
+@media screen and (max-width: 1600px) {
+    .header-area {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .secondary-button .part {
+        padding: 11.5px 26px;
+    }
+
+    .header-area .header-pages {
+        width: 600px;
+        height: 380px;
+    }
+
+    .header-text .title {
+        font-size: 56px;
+    }
+
+    .section-title .title {
+        font-size: 38px;
+        margin-bottom: 16px;
+    }
+
+    .section-padding {
+        padding: 80px 0;
+    }
+
+    .section-padding-top {
+        padding-top: 80px;
+    }
+
+    .section-padding-bottom {
+        padding-bottom: 80px;
+    }
+
+    .primary-button .part .icon {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        line-height: 30px;
+        margin-left: 10px;
+    }
+
+    .primary-button .part {
+        padding-left: 24px;
+    }
+
+    .footer-area .footer-top .footer-title {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header-text .title {
+        font-size: 38px;
+    }
+
+    .header-area .header-pages {
+        width: 400px;
+        height: 250px;
+        margin: -5px;
+    }
+
+    .header-area .header-pages img {
+        margin: 5px;
+        width: calc(33.33% - 10px);
+        border-radius: 3px;
+    }
+
+    .primary-button .part,
+    .secondary-button .part {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .primary-button .part .icon {
+        display: none;
+    }
+
+    .mainmenu-area .nav-actions .primary-button.cirlce .part {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header-area .header-pages {
+        width: 280px;
+        height: 190px;
+    }
+
+    .header-text .desc {
+        margin-bottom: 24px;
+    }
+
+    .header-text .title {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    .section-title .title {
+        font-size: 28px;
+    }
+
+    .footer-area .footer-top .footer-title {
+        font-size: 26px;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+}
+
+/* === Responsive-Mobile-Menu-CSS === */
+@media screen and (min-width: 1200px) {
+    .mainmenu-area .nav-row .menu-items {
+        display: block !important;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .mainmenu-area .nav-row .menu-items {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        display: none;
+    }
+
+    .mainmenu-area .nav-actions {
+        order: inherit;
+    }
+
+    .mainmenu-area .nav-actions .primary-button.menu-toggle {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --navbar-height: 80px;
+    }
+
+    .mainmenu-area .nav-row .menu-items>ul {
+        flex-direction: column;
+    }
+
+    .mainmenu-area .nav-row .menu-items>ul>li {
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(23, 11, 55, 0.1);
+        flex-wrap: wrap;
+    }
+
+    .mainmenu-area .nav-row .menu-items li ul {
+        position: static;
+        order: 1;
+        width: 100%;
+        display: none !important;
+        margin-top: 10px;
+    }
+
+    .mainmenu-area .nav-row .menu-items li.menu-open>ul {
+        display: block !important;
+    }
+
+    .mainmenu-area .nav-row .menu-items li.menu-open>ul.over-items {
+        display: grid !important;
+    }
+
+    .mainmenu-area .nav-row .menu-items ul li:not(.menu-open) .plus:before {
+        transform: rotate(90deg);
+    }
+
+    .mainmenu-area .nav-row .menu-items>ul>li>a {
+        line-height: 1.6em;
+    }
+
+    .mainmenu-area .nav-row .menu-items {
+        max-height: calc(100vh - var(--navbar-height));
+        overflow-y: auto;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .mainmenu-area .nav-row .menu-items>ul ul.over-items {
+        grid-template-columns: auto;
+    }
+
+    .primary-button .part {
+        padding: 8px 20px;
+    }
+    
+    .mainmenu-area .nav-actions .primary-button {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .mainmenu-area .nav-actions .action-button {
+        display: none;
+    }
+    
+    .mainmenu-area .nav-row .nav-logo .logo {
+        max-width: 120px;
+    }
+}

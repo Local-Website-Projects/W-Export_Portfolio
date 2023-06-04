@@ -1,0 +1,834 @@
+/* ==================
+CSS Indexing
+=====================
+1. Reset-CSS
+2. Button-CSS
+3. Helper-Class-CSS
+4. Section-Title-CSS
+5. Icon-List-CSS
+6. Preloader-CSS
+7. Mainmenu-CSS
+8. Header-CSS
+9. Features-CSS
+10. Counter-CSS
+11. Overview-CSS
+12. Video-CSS
+13. Call-to-Action-CSS
+14. Testimonial-CSS
+15. Product-CSS
+16. FAQ-CSS
+17. Footer-CSS
+===================*/
+
+:root {
+    --primary-color: #FF6B31;
+    --body-color: #696969;
+    --heading-color: #131313;
+    --navbar-height: 100px;
+}
+
+/*=== 1. Reset-CSS ===*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--body-color);
+}
+
+P:last-child {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: var(--heading-color);
+    margin-bottom: 16px;
+}
+
+a:focus,
+a:hover,
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+img {
+    max-width: 100%;
+}
+
+.row>div {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1312px;
+}
+
+/*=== 2. Button-CSS ===*/
+.primary-button {
+    background: none;
+    display: inline-block;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
+    box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.primary-button:hover {
+    background: none;
+    box-shadow: 0px 15px 25px rgba(255, 112, 49, 0.1);
+}
+
+.primary-button .part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 30px;
+    padding-right: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.primary-button .part .icon {
+    margin-left: 15px;
+    margin-right: 10px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border-radius: 100px;
+}
+
+.primary-button .back {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: #ffffff;
+    color: var(--primary-color);
+}
+
+.primary-button .back .icon {
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
+.primary-button:hover .part {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.primary-button.white-button .front {
+    background-color: #ffffff;
+    color: var(--primary-color);
+}
+
+.primary-button.white-button .back {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/*=== 2. Secondary-CSS ===*/
+.secondary-button {
+    background: none;
+    display: inline-block;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
+    box-shadow: 0px 0px 0px rgba(255, 112, 49, 0);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.secondary-button:hover {
+    color: #ffffff;
+    box-shadow: 0px 15px 25px rgba(255, 112, 49, 0.1);
+}
+
+.secondary-button .part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 32px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #131313;
+    color: #ffffff;
+}
+
+.secondary-button .back {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    color: #131313;
+    background-color: #ffffff;
+}
+
+.secondary-button:hover .part {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.secondary-button .icon {
+    font-size: 80%;
+    margin-left: 10px;
+}
+
+
+/*=== 3. Helper-Class-CSS ===*/
+.page-wrapper {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.section-padding {
+    padding-top: 132px;
+    padding-bottom: 132px;
+}
+
+.section-padding-top {
+    padding-top: 132px;
+}
+
+.section-padding-bottom {
+    padding-bottom: 132px;
+}
+
+.mb-n40 {
+    margin-bottom: -40px;
+}
+
+/*=== 4. Section-Title-CSS ===*/
+.section-title {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.section-title .title {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.section-title .primary-button {
+    margin-top: 48px;
+}
+
+/*=== 5. Icon-List-CSS ===*/
+.icon-list {
+    list-style: none;
+    margin: -8px 0;
+    padding: 0;
+}
+
+.icon-list li {
+    margin: 8px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.icon-list li:before {
+    content: "\e961";
+    font-family: landshop;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+
+/*=== 6. Preloader-CSS ===*/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.preloader .load {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--primary-color);
+    opacity: 0.1;
+}
+
+.preloader .count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 18vw;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+}
+
+/*=== 8. Mainmenu-CSS ===*/
+.mainmenu-area {
+    width: 100%;
+    z-index: 99;
+    right: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.mainmenu-area .container {
+    min-height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+}
+
+.mainmenu-area.sticky {
+    position: fixed;
+    background-color: #ffffff;
+}
+
+.mainmenu-area .nav-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.mainmenu-area .nav-row .nav-logo .logo {
+    display: inline-block;
+}
+
+.transparent-light .mainmenu-area:not(.sticky) .nav-row .nav-logo .dark-logo {
+    display: none;
+}
+
+body:not(.transparent-light) .mainmenu-area .nav-row .nav-logo .light-logo,
+.transparent-light .mainmenu-area.sticky .nav-row .nav-logo .light-logo {
+    display: none;
+}
+
+.transparent-dark .mainmenu-area .nav-row .nav-logo .light-logo {
+    display: none;
+}
+
+.mainmenu-area .nav-actions {
+    order: 1;
+    display: flex;
+    align-items: center;
+}
+
+.mainmenu-area .nav-actions .primary-button {
+    margin-left: 24px;
+    border-radius: 100px;
+    background-color: transparent !important;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.mainmenu-area .nav-actions .primary-button:hover {
+    box-shadow: 0px 4px 4px rgba(255, 107, 49, 0.2);
+}
+
+.mainmenu-area .nav-actions .primary-button .front {
+    background-color: #ffffff;
+    color: var(--heading-color);
+}
+
+.transparent-light .mainmenu-area:not(.sticky) .nav-actions .primary-button .front {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.mainmenu-area .nav-actions .primary-button .back {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.mainmenu-area .nav-actions .primary-button.cirlce .part {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.ls-bar {
+    font-size: 80%;
+}
+
+.mainmenu-area .nav-actions .primary-button.menu-toggle {
+    display: none;
+}
+
+.mainmenu-area .nav-row .menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 8;
+}
+
+.mainmenu-area .nav-row .menu-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mainmenu-area .nav-row .menu-items ul li {
+    position: relative;
+}
+
+.mainmenu-area .nav-row .menu-items ul li a {
+    color: var(--heading-color);
+    display: inline-block;
+}
+
+.mainmenu-area .nav-row .menu-items ul li>a.active,
+.mainmenu-area .nav-row .menu-items ul li:hover>a {
+    color: var(--primary-color);
+    text-shadow: 0 0 1px var(--primary-color);
+}
+
+.mainmenu-area .nav-row .menu-items>ul {
+    display: flex;
+    justify-content: center;
+}
+
+.mainmenu-area .nav-row .menu-items>ul>li {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.mainmenu-area .nav-row .menu-items>ul>li>a {
+    line-height: var(--navbar-height);
+}
+
+.mainmenu-area .nav-row .menu-items ul li>.plus {
+    width: 12px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-left: 8px;
+}
+
+.mainmenu-area .nav-row .menu-items ul li li>.plus {
+    float: right;
+}
+
+.mainmenu-area .nav-row .menu-items ul li>.plus:before,
+.mainmenu-area .nav-row .menu-items ul li>.plus:after {
+    content: "";
+    width: 12px;
+    height: 2px;
+    display: block;
+    background-color: var(--heading-color);
+    position: absolute;
+    left: calc(50% - 6px);
+    top: calc(50% - 2px);
+    transition: 0.5s;
+}
+
+.mainmenu-area .nav-row .menu-items ul li>a.active~.plus:before,
+.mainmenu-area .nav-row .menu-items ul li>a.active~.plus:after,
+.mainmenu-area .nav-row .menu-items ul li:hover>.plus:before,
+.mainmenu-area .nav-row .menu-items ul li:hover>.plus:after {
+    background-color: var(--primary-color);
+}
+
+.mainmenu-area .nav-row .menu-items ul li>.plus:before {
+    transform: rotate(90deg);
+}
+
+.mainmenu-area .nav-row .menu-items ul li.menu-open>.plus:before {
+    transform: rotate(0deg);
+}
+
+/*=== 9. Sub-Menu-CSS ===*/
+.mainmenu-area .nav-row .menu-items li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 16px 0;
+    transition: 0.5s;
+    transform: scaleY(0);
+    transform-origin: top left;
+    z-index: 2;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
+    opacity: 0;
+}
+
+.mainmenu-area .nav-row .menu-items li ul ul {
+    left: 100%;
+    top: 0;
+}
+
+.mainmenu-area .nav-row .menu-items li.menu-open>ul {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.mainmenu-area .nav-row .menu-items>ul ul.over-items {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.mainmenu-area .nav-row .menu-items>ul ul li {
+    padding: 3px 24px;
+    min-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mainmenu-area .nav-row .menu-items>ul ul li a {
+    color: #131313;
+}
+
+
+.transparent-light .mainmenu-area:not(.sticky) {
+    --heading-color: #ffffff;
+}
+
+.mainmenu-area .secondary-button .front {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.mainmenu-area .secondary-button .back {
+    color: var(--primary-color);
+}
+
+
+/* === Header-Area-CSS === */
+.header-area {
+    padding-top: 190px;
+    padding-bottom: 170px;
+    background-color: #FFF5F2;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.header-text .title {
+    font-size: 72px;
+    margin-bottom: 22px;
+    font-weight: 700;
+}
+
+.header-text .desc {
+    margin-bottom: 42px;
+    max-width: 570px;
+}
+
+.header-area .header-pages {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60vw;
+    height: 36vw;
+    max-width: 60vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    margin: -12px;
+    z-index: -1;
+    transform: rotate(-30deg) translate(6vw, 14vw);
+}
+
+.header-area .header-pages img {
+    width: calc(33.33% - 24px);
+    margin: 12px;
+    box-shadow: -20px 75px 65px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    animation: move-x-y 100s ease-in-out 0s infinite normal;
+}
+
+@keyframes move-x-y {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    50% {
+        transform: translate(0, -10%);
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+.header-area .header-pages img:nth-child(6),
+.header-area .header-pages img:nth-child(3) {
+    animation-duration: 3s;
+}
+
+.header-area .header-pages img:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.header-area .element {
+    position: absolute;
+    z-index: -1;
+    animation: cirlce 5s ease-in-out 0s infinite normal;
+}
+
+@keyframes cirlce {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    50% {
+        transform: translate(0, -10%);
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+.header-area .element.no-1 {
+    bottom: 10%;
+    left: -40px;
+    width: 10vw;
+    max-width: 273px;
+}
+
+.header-area .element.no-2 {
+    top: -14%;
+    width: 18vw;
+    max-width: 272px;
+}
+
+.header-area .element.no-3 {
+    left: 60%;
+    top: 22%;
+    max-width: 155px;
+    width: 10vw;
+}
+
+.demo-box {
+    display: block;
+    text-align: center;
+}
+
+.demo-box .thumb {
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+}
+
+.demo-box .thumb img {
+    width: 100%;
+    transform: scale(1) rotate(0deg);
+    transition: 0.5s;
+    filter: brightness(1);
+}
+
+.demo-box:hover .thumb img {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.demo-box .title {
+    margin: 0;
+    font-weight: 600;
+}
+
+.demo-box .thumb .soon-banner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 100px;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.1);
+}
+
+
+.element-section {
+    background-color: #FFF5F2;
+}
+
+.components figure {
+    overflow: hidden;
+    line-height: 1em;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border: 4px solid #ffffff;
+    overflow: hidden;
+}
+
+.components figure img {
+    width: 100%;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.components figure:hover img {
+    transform: scale(1.1);
+}
+
+.inner-section .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+}
+
+.inner-page-slider-1 {
+    margin: -65px 0;
+}
+
+.inner-page-slider-2 {
+    margin: -50px 0 -65px;
+}
+
+.inner-section .inner-image {
+    box-shadow: 0px 15px 65px rgba(0, 0, 0, 0.15);
+    height: 100%;
+    margin: 65px 22px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.feature-section {
+    background-color: #FFF5F2;
+}
+
+.feature-box {
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
+    padding: 40px 30px;
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+.feature-box:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0px 10px 40px rgba(255, 107, 49, 0.3);
+}
+
+.feature-box .icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.feature-box .icon {
+    background-color: rgba(255, 107, 49, 0.1);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 100px;
+    color: var(--primary-color);
+    display: inline-block;
+    margin-bottom: 24px;
+    transition: 0.5s;
+}
+
+
+.feature-box:hover .icon {background-color: #ffffff;}
+
+.feature-box .title {
+    font-size: 24px;
+    font-weight: 300;
+    transition: 0.5s;
+    margin: 0;
+}
+
+.feature-box:hover .title {
+    color: #ffffff;
+}
+
+.footer-area {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.footer-area .footer-top {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.footer-area .footer-top .footer-title {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.footer-area .footer-top .logo {
+    margin-bottom: 24px;
+}
+
+.footer-area .footer-bottom {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: #ffffff;
+}

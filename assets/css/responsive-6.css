@@ -1,0 +1,233 @@
+@media screen and (max-width: 1500px) {
+    .overlay-text {
+        font-size: 12vw !important;
+    }
+
+    .about-area .overlay-text {
+        bottom: -30px;
+        right: -30px;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    .header-area .overlay-text {
+        font-size: 120px;
+    }
+
+    .header-area {
+        margin-bottom: 100px;
+    }
+
+    .header-area .header-image {
+        margin: 80px 0 -100px 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .feature-area {
+        margin-top: 0;
+    }
+
+    .feature-image-area {
+        margin-top: 86px;
+    }
+
+    .feature-area .overlay-text {
+        top: -5%;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header-area .header-title {
+        font-size: 84px;
+    }
+
+    .header-area .overlay-text {
+        font-size: 90px;
+    }
+
+    .section-padding {
+        padding: 100px 0;
+    }
+
+    .section-padding-top {
+        padding-top: 100px;
+    }
+
+    .section-padding-bottom {
+        padding-bottom: 100px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .header-area .header-title {
+        font-size: 64px;
+    }
+
+    .header-area .overlay-text {
+        font-size: 80px;
+    }
+
+    .testimonial-image {
+        margin-left: 0;
+    }
+
+    .section-title .title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header-area .header-title {
+        font-size: 54px;
+    }
+
+    .header-area .overlay-text {
+        font-size: 60px;
+    }
+
+    .header-area {
+        margin-bottom: 60px;
+    }
+
+    .header-area .header-image {
+        margin: 80px 0 -60px 0;
+    }
+
+}
+
+
+
+
+/* === Responsive-Mobile-Menu-CSS === */
+@media screen and (min-width: 1200px) {
+    .mainmenu-area .nav-row .menu-items {
+        display: block !important;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .mainmenu-area .nav-row .menu-items {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        display: none;
+    }
+
+    .transparent-light .mainmenu-area:not(.sticky) .menu-items {
+        --heading-color: #131313;
+    }
+
+    .mainmenu-area .nav-actions {
+        order: inherit;
+    }
+
+    .mainmenu-area .nav-actions .primary-button.menu-toggle {
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 768px) {        
+    .mainmenu-area .nav-row .menu-items li:hover > ul {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    .mainmenu-area .nav-row .menu-items ul li:hover > .plus:before {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --navbar-height: 80px;
+    }
+
+    .mainmenu-area .nav-row .menu-items > ul {
+        flex-direction: column;
+    }
+
+    .mainmenu-area .nav-row .menu-items > ul > li {
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(23, 11, 55, 0.1);
+        flex-wrap: wrap;
+    }
+
+    .mainmenu-area .nav-row .menu-items li ul {
+        position: static;
+        order: 1;
+        width: 100%;
+        display: none !important;
+        margin-top: 10px;
+    }
+
+    .mainmenu-area .nav-row .menu-items li.menu-open > ul {
+        display: block !important;
+    }
+
+    .mainmenu-area .nav-row .menu-items li.menu-open > ul.over-items {
+        display: grid !important;
+    }
+
+    .mainmenu-area .nav-row .menu-items ul li:not(.menu-open) .plus:before {
+        transform: rotate(90deg);
+    }
+
+    .mainmenu-area .nav-row .menu-items > ul > li > a {
+        line-height: 1.6em;
+    }
+
+    .mainmenu-area .nav-row .menu-items {
+        max-height: calc(100vh - var(--navbar-height));
+        overflow-y: auto;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .mainmenu-area .nav-row .menu-items > ul ul.over-items {
+        grid-template-columns: auto;
+    }
+
+    .primary-button .part {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .mainmenu-area .nav-row .nav-logo .logo {
+        max-width: 150px;
+    }
+
+    .mainmenu-area .nav-actions .primary-button.cirlce .part {
+        width: 34px;
+        height: 34px;
+        font-size: 14px;
+    }
+
+    .mainmenu-area .nav-actions .primary-button {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .mainmenu-area .nav-actions .action-button {
+        display: none;
+    }
+
+    .mainmenu-area .nav-actions .primary-button.cirlce .part {
+        width: 30px;
+        height: 30px;
+    }
+
+    .mainmenu-area .nav-row .nav-logo .logo {
+        max-width: 120px;
+    }
+}

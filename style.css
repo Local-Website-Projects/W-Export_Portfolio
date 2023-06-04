@@ -1,0 +1,15 @@
+/* Enter type your CSS */
+
+.ls-icons-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    font-size: 40px;
+}
+
+.ls-icons-list li {
+    margin: 25px 50px;
+}

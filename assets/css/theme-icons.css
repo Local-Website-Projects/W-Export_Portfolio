@@ -1,0 +1,469 @@
+@font-face {
+    font-family: 'landshop';
+    src: url('../fonts/theme-icons/icomoon5a6d.eot?pspcam');
+    src: url('../fonts/theme-icons/icomoon5a6d.eot?pspcam#iefix') format('embedded-opentype'),
+        url('../fonts/theme-icons/icomoon5a6d.ttf?pspcam') format('truetype'),
+        url('../fonts/theme-icons/icomoon5a6d.woff?pspcam') format('woff'),
+        url('../fonts/theme-icons/icomoon5a6d.svg?pspcam#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="ls-"],
+[class*=" ls-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'landshop' !important;
+    font-style: normal;
+}
+
+
+.ls-briefcase-2:before {
+    content: "\e971";
+}
+
+.ls-calender-2:before {
+    content: "\e972";
+}
+
+.ls-user-2:before {
+    content: "\e973";
+}
+
+.ls-account:before {
+    content: "\e974";
+}
+
+.ls-user:before {
+    content: "\e96f";
+}
+
+.ls-message:before {
+    content: "\e970";
+}
+
+.ls-call-calling:before {
+    content: "\e96e";
+}
+
+.ls-music-bold:before {
+    content: "\e969";
+}
+
+.ls-lighting:before {
+    content: "\e96a";
+}
+
+.ls-sound:before {
+    content: "\e96b";
+}
+
+.ls-music:before {
+    content: "\e96c";
+}
+
+.ls-volume-high:before {
+    content: "\e96d";
+}
+
+.ls-right-quote-line:before {
+    content: "\e968";
+}
+
+.ls-microphone-2:before {
+    content: "\e966";
+}
+
+.ls-cupon:before {
+    content: "\e967";
+}
+
+.ls-ultraviolet:before {
+    content: "\e900";
+}
+
+.ls-support:before {
+    content: "\e902";
+}
+
+.ls-sunglasses:before {
+    content: "\e903";
+}
+
+.ls-star-2:before {
+    content: "\e904";
+}
+
+.ls-speedometer:before {
+    content: "\e905";
+}
+
+.ls-simcard:before {
+    content: "\e906";
+}
+
+.ls-ship:before {
+    content: "\e907";
+}
+
+.ls-security-safe:before {
+    content: "\e908";
+}
+
+.ls-security:before {
+    content: "\e909";
+}
+
+.ls-scooter:before {
+    content: "\e90a";
+}
+
+.ls-robot:before {
+    content: "\e90b";
+}
+
+.ls-refresh-2:before {
+    content: "\e90c";
+}
+
+.ls-ram:before {
+    content: "\e90d";
+}
+
+.ls-processor:before {
+    content: "\e90e";
+}
+
+.ls-planet:before {
+    content: "\e90f";
+}
+
+.ls-aperture:before {
+    content: "\e910";
+}
+
+.ls-people:before {
+    content: "\e911";
+}
+
+.ls-peak:before {
+    content: "\e912";
+}
+
+.ls-mouse:before {
+    content: "\e913";
+}
+
+.ls-microphone:before {
+    content: "\e914";
+}
+
+.ls-lifebuoy:before {
+    content: "\e915";
+}
+
+.ls-hold:before {
+    content: "\e916";
+}
+
+.ls-global:before {
+    content: "\e917";
+}
+
+.ls-games-controler:before {
+    content: "\e918";
+}
+
+.ls-fullhd:before {
+    content: "\e919";
+}
+
+.ls-film-reel-playing:before {
+    content: "\e91a";
+}
+
+.ls-eye-scan:before {
+    content: "\e91b";
+}
+
+.ls-drone:before {
+    content: "\e91c";
+}
+
+.ls-driver:before {
+    content: "\e91d";
+}
+
+.ls-cloud-add:before {
+    content: "\e91e";
+}
+
+.ls-cash-back:before {
+    content: "\e91f";
+}
+
+.ls-camera-2:before {
+    content: "\e920";
+}
+
+.ls-camera:before {
+    content: "\e921";
+}
+
+.ls-bulb-2:before {
+    content: "\e922";
+}
+
+.ls-bulb:before {
+    content: "\e923";
+}
+
+.ls-box-2:before {
+    content: "\e924";
+}
+
+.ls-bag-happy:before {
+    content: "\e925";
+}
+
+.ls-bag:before {
+    content: "\e926";
+}
+
+.ls-5g:before {
+    content: "\e927";
+}
+
+.ls-bar:before {
+    content: "\e93b";
+}
+
+.ls-close-line:before {
+    content: "\e93a";
+}
+
+.ls-search:before,
+.ls-search-line:before {
+    content: "\e939";
+}
+
+.ls-close-square:before {
+    content: "\e928";
+}
+
+.ls-toggle-bar:before {
+    content: "\e929";
+}
+
+.ls-check-circle:before {
+    content: "\e92a";
+}
+
+.ls-headphone:before {
+    content: "\e92b";
+}
+
+.ls-setting-2:before {
+    content: "\e92c";
+}
+
+.ls-box:before {
+    content: "\e92d";
+}
+
+.ls-refresh-circle:before {
+    content: "\e92e";
+}
+
+.ls-home:before {
+    content: "\e92f";
+}
+
+.ls-coin:before {
+    content: "\e930";
+}
+
+.ls-truck:before {
+    content: "\e931";
+}
+
+.ls-sun:before {
+    content: "\e932";
+}
+
+.ls-color-swatch:before {
+    content: "\e933";
+}
+
+.ls-security-safe:before {
+    content: "\e934";
+}
+
+.ls-adjust:before {
+    content: "\e935";
+}
+
+.ls-bubble:before {
+    content: "\e936";
+}
+
+.ls-volume-high:before {
+    content: "\e937";
+}
+
+.ls-love-fill:before {
+    content: "\e938";
+}
+
+.ls-circle-dots:before {
+    content: "\e93c";
+}
+
+.ls-glasses:before {
+    content: "\e93d";
+}
+
+.ls-motion:before {
+    content: "\e93e";
+}
+
+.ls-rotation:before {
+    content: "\e93f";
+}
+
+.ls-setting:before {
+    content: "\e940";
+}
+
+.ls-technology:before {
+    content: "\e941";
+}
+
+.ls-close:before {
+    content: "\e943";
+}
+
+.ls-heart:before {
+    content: "\e944";
+}
+
+.ls-eye:before {
+    content: "\e945";
+}
+
+.ls-cart:before {
+    content: "\e946";
+}
+
+.ls-angle-left:before {
+    content: "\e947";
+}
+
+.ls-angle-right:before {
+    content: "\e948";
+    font-size: 80%;
+}
+
+.ls-arrow-right:before {
+    content: "\e949";
+}
+
+.ls-backpack:before {
+    content: "\e94a";
+}
+
+.ls-drop:before {
+    content: "\e94b";
+}
+
+.ls-jaket:before {
+    content: "\e94c";
+}
+
+.ls-locked:before {
+    content: "\e94d";
+}
+
+.ls-needle:before {
+    content: "\e94e";
+}
+
+.ls-plate:before {
+    content: "\e94f";
+}
+
+.ls-play:before {
+    content: "\e950";
+}
+
+.ls-pocket:before {
+    content: "\e951";
+}
+
+.ls-quote-left:before {
+    content: "\e952";
+}
+
+.ls-quote-right:before {
+    content: "\e953";
+}
+
+.ls-sapling:before {
+    content: "\e954";
+}
+
+.ls-chat:before {
+    content: "\e955";
+}
+
+.ls-shop:before {
+    content: "\e956";
+}
+
+.ls-wool:before {
+    content: "\e958";
+}
+
+.ls-zipper:before {
+    content: "\e959";
+}
+
+.ls-envelope:before {
+    content: "\e95a";
+}
+
+.ls-paper-plane:before {
+    content: "\e95b";
+}
+
+.ls-linkedin:before {
+    content: "\e95c";
+}
+
+.ls-instagram:before {
+    content: "\e95d";
+}
+
+.ls-twitter:before {
+    content: "\e95e";
+}
+
+.ls-facebook:before {
+    content: "\e95f";
+}
+
+.ls-star:before {
+    content: "\e960";
+}
+
+.ls-qube:before {
+    content: "\e961";
+}
+
+.ls-minus:before {
+    content: "\e962";
+}
+
+.ls-plus:before {
+    content: "\e963";
+}
