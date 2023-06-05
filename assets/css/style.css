@@ -42,13 +42,13 @@ iframe {
     padding-right: var(--bs-gutter-x, 0.75rem); } }
 
 .bg-1 {
-  background-color: #00234D; }
+  background-color: #dd362b; }
 
 .bg-2 {
   background-color: #000; }
 
 .bg-3 {
-  background-color: #F76B6A; }
+  background-color: #dd362b; }
 
 .bg-4 {
   background-color: #071C1F; }
@@ -121,9 +121,9 @@ iframe {
   -ms-border-radius: var(--btn-secondary-border-radius);
   -webkit-border-radius: var(--btn-secondary-border-radius);
   border-radius: var(--btn-secondary-border-radius);
-  color: var(--btn-secondary-color);
+  color: #dd362b;
   border: 1px solid var(--btn-secondary-border-color);
-  background-color: var(--btn-secondary-background-color);
+  background-color: #dd362b;
   font-weight: var(--btn-secondary-font-weight); }
 
 .btn-primary:hover,
@@ -545,9 +545,12 @@ button,
   position: fixed;
   bottom: 30px;
   right: 30px;
-  -webkit-transition: background-color .3s,  opacity .5s, visibility .5s;
-  -o-transition: background-color .3s,  opacity .5s, visibility .5s;
-  transition: background-color .3s,  opacity .5s, visibility .5s;
+  -webkit-transition: background-color .3s, 
+ opacity .5s, visibility .5s;
+  -o-transition: background-color .3s, 
+ opacity .5s, visibility .5s;
+  transition: background-color .3s, 
+ opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
@@ -2683,7 +2686,7 @@ blockquote {
 .about-service-icon {
   width: 80px;
   height: 80px;
-  background-color: #FFAE00;
+  background-color: #dd362b;
   border-radius: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2767,7 +2770,7 @@ blockquote {
   font-size: 14px;
   line-height: 1.2;
   color: #000000;
-  background-color: #FFAE00;
+  background-color:#dd362b;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2781,7 +2784,7 @@ blockquote {
   padding: 13.5px 24px;
   min-width: 139px;
   height: 44px;
-  background: #FFAE00;
+  background: #dd362b;
   border-radius: 4px; }
 
 .about-banner {
